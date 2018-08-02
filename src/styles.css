@@ -1,8 +1,7 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
 body {
-    background-image: url("./assets/images/img_background.jpg");
-    background-size: cover;
+    background-color: #000034;
 }
 
 .container {
