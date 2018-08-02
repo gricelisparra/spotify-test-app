@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+    background-image: url("./assets/images/img_background.jpg");
+    background-size: cover;
+}
+
+.container {
+    color: #F8F9F9;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.jumbotron {
+    padding: 2rem 1rem;
+}
+
+.album-card {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
