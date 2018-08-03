@@ -39,6 +39,10 @@ export class AppComponent {
       .subscribe(
         albumPageWrapper => {
           this.albumPage = albumPageWrapper.albums;
+
+          if (!this.albumPage.items || !this.albumPage.items.length){
+            this.setAlert(CONSTANTS.ERROR_TYPE.INFO, MESSAGES.INFO.EMPTY_SEARCH);
+          }
         },
         err => {
           this.setAlert(CONSTANTS.ERROR_TYPE.ERR, MESSAGES.ERROR.ALBUM_SEARCH);
